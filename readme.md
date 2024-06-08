@@ -1,4 +1,9 @@
-# MirrorFetch
+# SimpleMirrorFetch
+
+与[MirrorFetch](https://github.com/woodchen-ink/MirrorFetch)的区别在于:
+
+1. 不支持URL模式,也就是`https://yourdomain.com/https://test.com/1.jpg`这种方式,只支持`SOURCE_URLS`的配置
+2. 所有文件存在`/data`目录下, 不在根据域名区分不同文件夹
 
 MirrorFetch 是一个用于镜像和缓存外部文件的轻量级服务应用。它能够自动检测请求的 URL，并从源站获取文件，缓存到本地。下次访问相同文件时，直接从本地缓存中读取，提升访问速度，减少对源站的依赖。
 
